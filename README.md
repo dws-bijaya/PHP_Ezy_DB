@@ -2,7 +2,7 @@
 |_)|_||_) |_  _  \/ | \|_)
 |  | ||   |__ /_ /  |_/|_) 1.0.0
 *****************************************
-# PHP Ezy DB Example 
+# `PHP Ezy DB Example` 
 
 Version: 1.0.0
 Author: Bijaya Kumar
