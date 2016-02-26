@@ -11,7 +11,7 @@ Author: Bijaya Kumar
 Email: it.bijaya@gmail.com
 Mobile: +91 9911033016
 
-A simple, Eazy and light weightPHP Database wrapper class includes mysql, mongo and memcache and best for runable server like  cron job
+A simple, Eazy and light weightPHP Database wrapper class includes mysql, mongo and memcache and best for runable services like  cron job
 
 Feature:
 	*. support mysqli, pdo, mongo drives
