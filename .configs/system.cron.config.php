@@ -1,46 +1,65 @@
 <?php
 /**
-*  PHP Ezy DB Example Config File
-*  Version: 1.0.1
-*  FileName: system.cron.config.php
-*  Author: Bijaya Kumar
-*  Email: it.bijaya@gmail.com
-*  Mobile: +91 9911033016
-*
-*  Example file for Config
-*
+*  @File: system.cron.config.php
+*  @Description PHP Ezy DB Example Config File
+*  @Version: 1.0.0
+*  @Autore: Bijaya Kumar
+*  @Email:  it.bijaya@gmail.com
+*  @Mobile: +91 9911033016
+*  @Country: India
 **/
 return array(
      'DB' => array(
         'TESTCONFIG1' => array(
-            'use' => 'memcache',
-            'host' => '192.168.1.102',
-            'port' => 22122,
-            'user' => '',
+            'use' => 'mysqli',
+            'host' => 'localhost',
+            'port' => 3306,
+            'user' => 'root',
             'charset'=>'utf8',
             'timeout'=> 1,
-            'password' => '123456',
-            'database' => 'backlinks',
-            'prefix' => 'bl_'
+            'password' => '',
+            'database' => 'test',
+            'prefix' => 'tgr_'
         ),
         'TESTCONFIG2' => array(
-            'use' => 'pdo_mysqli',
+            'use' => 'mysql',
             'host' => 'localhost',
-            'port' => 3307,
-            'user' => 'postgres',
+            'port' => 3306,
+            /*
+                // sock file 
+                'host' => '',
+                'port' => '/tmp/mysql.sock',
+            */
+            'newlink' => false, /* true for new connection | false for reuse connection */
+            'persistent' => true, /* true | false */
+            'driver_options' => 0, /* parameter can be a combination of the following constants: 128 (enable LOAD DATA LOCAL handling), MYSQL_CLIENT_SSL, MYSQL_CLIENT_COMPRESS, MYSQL_CLIENT_IGNORE_SPACE or MYSQL_CLIENT_INTERACTIVE */
+            'user' => 'root',
             'charset'=>'utf8',
-            'password' => '123456',
-            'database' => 'backlinks',
-            'prefix' => 'bl_'
+            'password' => '',
+            'database' => 'test',
+            'prefix' => 'tgr_'
         ),
         'TESTCONFIG3' => array(
-            'use' => 'pdo_mysqli',
+            'use' => 'pdo_mysql',
             'host' => 'localhost',
-            'port' => 3308,
+            'port' => 3306,
             'user' => 'root',
             'password' => '',
-            'database' => 'backlinks2',
-            'prefix' => 'bl_'
+            'database' => 'test',
+            'prefix' => 'tgr_'
+        ),
+        'TESTCONFIG4' => array(
+            'use' => 'mongo',
+            'host' => 'localhost',
+            /*  
+                # For sock file
+                'host' => 'mongodb://mongod.sock',
+            */
+            'port' => 27017,
+            'user' => '',
+            'password' => '',
+            'database' => 'test',
+            'prefix' => 'tgr_'
         )
     )
 );
